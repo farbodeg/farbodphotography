@@ -53,11 +53,12 @@ nav a {
     font-size: 16px;
 }
 
-.fp {
+.header-logo {
   max-width: 100%;
-  width: 10%;
-  margin-left: 860px;
-  margin-top: 100px;
+  width: 30%;
+  margin-bottom: 10%;
+  margin-left: 28%;
+  height: auto;
 }
 
 main {
@@ -142,12 +143,6 @@ ul {
         align-items: center;
     }
     
-    .fp {
-  max-width: 100%;
-  width: 30%;
-  margin-left: 180px;
-  margin-top: 100px;
-}
 
   }
   
@@ -168,12 +163,6 @@ ul {
         align-items: center;
     }
 
-        .fp {
-  max-width: 100%;
-  width: 20%;
-  margin-left: 400px;
-  margin-top: 100px;
-}
 
     
   }
@@ -195,12 +184,6 @@ ul {
         align-items: center;
     }
 
-    .fp {
-      max-width: 100%;
-      width: 10%;
-      margin-left: 860px;
-      margin-top: 100px;
-    }
 
     
   }
