@@ -6,10 +6,13 @@ body {
 }
 
 header {
+    max-width: 100%;
     background-image: url('images2/4.jpg');
     background-size: cover;
     background-position: center;
+    width: auto;
     height: 50vh;
+
 }
 
 header {
@@ -127,6 +130,15 @@ ul {
 
 /* Small screens (cellphones) */
 @media only screen and (max-width: 600px) {
+    
+    nav {
+    position: static;
+    top: auto;
+    left: auto;
+    padding: 0;
+    width: 100%;
+  }
+  
     li {
       width: 50%;
     }
