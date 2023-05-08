@@ -131,13 +131,9 @@ ul {
 /* Small screens (cellphones) */
 @media only screen and (max-width: 600px) {
     
-    nav {
-    position: static;
-    top: auto;
-    left: auto;
-    padding: 0;
-    width: 100%;
-  }
+    header {
+      height: 30vh
+    }
   
     li {
       width: 50%;
