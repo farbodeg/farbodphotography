@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Farbod Photography</h1>
+    
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <div class="holder">
+            <!-- My form container holder, above form container, above the border -->
+
+                <div class="form">
+                <!-- My form container -->
+                    <form action="process_form.php" method="post">
+                        <label for="name">Name:</label>
+                        <input class="namebox" type="text" id="name" name="name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input class="emailtbox" type="email" id="email" name="email" required>
+                        <br>
+                        <label for="title">Title:</label>
+                        <input class="titlebox" type="text" id="title" name="title">
+                        <br>
+                        <label class="message" for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        <footer>
+            <p>&copy; 2023 My Photography Website</p>
+        </footer>
+    </body>
+</html>
