@@ -68,6 +68,7 @@ main {
     padding: 100px;
     max-width: 800px;
     margin: 0 auto;
+    /* border: solid red; */
 }
 
 h2 {
@@ -136,13 +137,12 @@ ul {
   }
 
   .form {
-    /* In contact page */
-    /* My form container */
-    max-width: 300px;
-    margin: 0 auto; /* center the container horizontally */
-    padding-left: 2%;
-    padding-top: 2%;
-    border: solid black;
+  /* In contact page */
+  /* My form container */
+  max-width: 300px;
+  margin: 0 auto 1% auto; /* center the container horizontally and add a small bottom margin */
+  padding: 2%;
+  border: solid black;
   }
 
   label {
@@ -213,6 +213,25 @@ ul {
   }
 
 
+  .email {
+    /* Use the same width, padding, and border as the .form element */
+  max-width: 300px;
+  margin: 0 auto 2% auto; /* center the container horizontally and add a small bottom margin */
+  padding: 2%;
+  border: solid black;
+  }
+
+  .pe {
+    margin-left: 5%;
+    /* Email address <p> */
+  }
+
+  .pn {
+    margin-left: 5%;
+    /* Phone number <p> */
+  }
+
+
 
 
   /* Media queries for different screen sizes */
@@ -224,7 +243,14 @@ ul {
       height: 10vh
     }
 
+    main {
+      padding: 100px;
+      max-width: 800px;
+      margin: 0 auto;
+      /* border: solid red; */
+  }
 
+  
     ul {
       position: relative;
       top: -400px;  
@@ -246,11 +272,22 @@ ul {
         align-items: center;
     }
 
+    .holder {  
+      /* In contact page */
+      /* My form container holder, above form container, above the border */
+      max-width: 100%;
+      height: auto;
+      margin: 10%;
+      padding: 10%;
+    }
+  
+
     .form {
       /* In contact page */
       /* My form container */
       max-width: 300px;
       margin: 0 auto; /* center the container horizontally */
+      margin-right: -130px;
       padding-left: 6%;
       padding-top: 8%;
       border: solid black;
@@ -297,6 +334,30 @@ ul {
       padding: 3%;
       padding-left: 15%;
       padding-right: 15%;
+    }
+
+    .holder2 {
+      padding: 10%;
+    }
+
+    .email {
+      /* Use the same width, padding, and border as the .form element */
+    max-width: 300px;
+    margin: 0 auto 2% auto; /* center the container horizontally and add a small bottom margin */
+    margin-left: -18px;
+    margin-right: -150px;
+    padding: 2%;
+    border: solid black;
+    }
+
+    .pe {
+      margin-left: 3%;
+      /* Email address <p> */
+    }
+
+    .pn {
+      margin-left: 3%;
+      /* Phone number <p> */
     }
   
     
