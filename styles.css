@@ -66,6 +66,7 @@ nav a {
 
 main {
     padding: 100px;
+    padding-left: 9%;
     max-width: 800px;
     margin: 0 auto;
     /* border: solid red; */
@@ -137,11 +138,13 @@ ul {
   }
 
   .form {
+    position: relative;
   /* In contact page */
   /* My form container */
   max-width: 300px;
   margin: 0 auto 1% auto; /* center the container horizontally and add a small bottom margin */
   padding: 2%;
+  left: -50px;
   border: solid black;
   }
 
@@ -197,27 +200,21 @@ ul {
 
   button {
     margin: 10%;
-    margin-left: 24%;
+    margin-left: 30%;
     padding: 3%;
     padding-left: 15%;
     padding-right: 15%;
   }
 
-
-  button {
-    margin: 10%;
-    margin-left: 24%;
-    padding: 3%;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
 
 
   .email {
+    position: relative;
     /* Use the same width, padding, and border as the .form element */
   max-width: 300px;
   margin: 0 auto 2% auto; /* center the container horizontally and add a small bottom margin */
   padding: 2%;
+  left: -50px;
   border: solid black;
   }
 
