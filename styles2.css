@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  max-width: 100%;
+  background-image: url('images2/4.jpg');
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header-logo {
+  max-width: 100%;
+  width: 30%;
+  margin-bottom: 10%;
+  margin-left: 28%;
+  height: auto;
+}
+
+main {
+  padding: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  /* border: solid red; */
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+li {
+  width: 33.33%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+li img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 15%;
+  /* Set the aspect ratio to 4:3 (change as needed) */
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  background-color: gray;
+  /* Add a background color to create a uniform appearance */
+}
+
+.holder {
+  /* In contact page */
+  /* My form container holder, above form container, above the border */
+  max-width: 100%;
+  height: auto;
+  margin: 10%;
+}
+
+.form {
+  /* In contact page */
+  /* My form container */
+  max-width: 300px;
+  margin: 0 auto 1% auto;
+  /* center the container horizontally and add a small bottom margin */
+  padding: 2%;
+  border: solid black;
+}
+
+label {
+  /* In contact page */
+  font-size: 20px;
+}
+
+.message {
+  position: relative;
+  top: -10px;
+}
+
+input {
+  /* In contact page */
+  margin-bottom: 20px;
+  padding: 3%;
+}
+
+.namebox {
+  position: relative;
+  left: 9%;
+  padding-left: 10%;
+}
+
+.emailtbox {
+  position: relative;
+  left: 10%;
+  padding-left: 10%;
+}
+
+.titlebox {
+  position: relative

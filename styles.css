@@ -32,6 +32,11 @@ h1 {
     align-items: center;
 }
 
+a {
+  text-decoration: none;
+  color: blue;
+}
+
 nav {
     position: absolute;
     top: 530px;
@@ -61,6 +66,14 @@ nav a {
   width: 30%;
   margin-bottom: 10%;
   margin-left: 28%;
+  height: auto;
+}
+
+.aboutimage {
+  max-width: 100%;
+  width: 50%;
+  margin-bottom: 10%;
+  margin-left: 18%;
   height: auto;
 }
 
@@ -410,4 +423,9 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #fff;
 }
