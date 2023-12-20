@@ -26,6 +26,10 @@ header {
 }
 
 h1 {
+  text-shadow: 3px 4px 5px black;
+}
+
+h1 {
     margin: 810px;
     font-size: 28px;
     text-align: center;
@@ -35,6 +39,17 @@ h1 {
 a {
   text-decoration: none;
   color: blue;
+}
+
+a:hover {
+  color: white;
+  background-color: red;
+  border-style: double;
+  border-color: black;
+}
+
+a:active {
+  background-color: darkred;
 }
 
 nav {
@@ -60,6 +75,67 @@ nav a {
     text-decoration: none;
     font-size: 16px;
 }
+
+.home {
+  border: solid black;
+  padding: 15%;  
+}
+
+.home:hover {
+  background-color: red;
+  color: white;
+}
+
+.home:active {
+  background-color: darkred;
+}
+
+.gallery {
+  border: solid black;
+  padding: 15%;
+  padding-top: 13%;
+  padding-bottom: 13%;
+}
+
+.gallery:hover {
+  background-color: red;
+  color: white;
+}
+
+.gallery:active {
+  background-color: darkred;
+}
+
+.about {
+  border: solid black;
+  padding: 15%;
+  padding-top: 16%;
+  padding-bottom: 16%;
+}
+
+.about:hover {
+  background-color: red;
+  color: white;
+}
+
+.about:active {
+  background-color: darkred;
+}
+
+.contact {
+  border: solid black;
+  padding: 12%;
+}
+
+.contact:hover {
+  background-color: red;
+  color: white;
+}
+
+.contact:active {
+  background-color: darkred;
+}
+
 
 .header-logo {
   max-width: 100%;
