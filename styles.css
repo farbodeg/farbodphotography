@@ -218,6 +218,38 @@ ul {
   }
 
 
+  /* Style for normal state */
+  .imgmag {
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Changes the cursor to indicate the image is clickable */
+  }
+
+  /* Style for magnified state */
+  .magnify {
+    transform: scale(3); /* Adjust scale value for the level of zoom */
+  }
+
+  .msg {
+    display: none; /* Keeps the message hidden initially */
+    color: darkred; /* Sets the text color */
+    background-color: orange; /* Sets the background color */
+    border: 10px solid red; /* Adds a border around the message */
+    padding: 5px; /* Adds padding inside the message box */
+    margin-top: 5px; /* Adds space above the message box */
+    text-align: center; /* Centers the text inside the box */
+
+    /* New additions */
+    z-index: 100; /* Ensures the message is on top */
+    position: relative; /* Positions the message absolutely within its parent */
+    bottom: 10px; /* Distance from the bottom of the parent element */
+    left: 290%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center horizontally */
+    width: 140%; /* Width of the message box */
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+
   .holder {  
     /* In contact page */
     /* My form container holder, above form container, above the border */
@@ -263,6 +295,11 @@ ul {
     top: -10px;
   }
 
+  .messagebox:focus {
+    background-color: rgb(118, 229, 118);
+    color: black;
+  }
+
   input {
     /* In contact page */
     margin-bottom: 20px;
@@ -287,12 +324,27 @@ ul {
     padding-left: 10%;
   }
 
+  input:focus {
+    background-color: rgb(118, 229, 118);
+    color: black;
+  }
+
   button {
     margin: 10%;
     margin-left: 30%;
     padding: 3%;
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  button:hover {
+    background-color: red;
+    color: white;
+  }
+
+  button:active {
+    background-color: darkred;
+    color: white;
   }
 
 
