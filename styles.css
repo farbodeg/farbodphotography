@@ -378,6 +378,7 @@ ul {
     bottom: 20px;
     left: 20px; /* Position it on the left side */
     cursor: pointer;
+    transition: display 1s ease-in-out;
 }
 
 .jump-to-top:hover {
