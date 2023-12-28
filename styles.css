@@ -394,6 +394,32 @@ ul {
     /* Add more styles if needed */
 }
 
+#louisvilleTime {
+  font-family: 'Arial', sans-serif; /* Elegant font */
+  color: #ffffff; /* White font color */
+  background: linear-gradient(45deg, #aa4848, #cc1f1f); /* Gradient background */
+  padding: 15px 30px; /* Generous padding */
+  border-radius: 10px; /* More pronounced rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow for a 3D effect */
+  display: inline-block;
+  margin: 20px;
+  font-size: 1.5em; /* Larger font size for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+  border: 2px solid #ffffff; /* White border to complement the background */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: default;
+  position: fixed; /* Fixes the position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right side of the viewport */
+  z-index: 1000; /* Ensures it's on top of other elements */
+}
+
+#louisvilleTime:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
 
 
 
