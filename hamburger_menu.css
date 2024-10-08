@@ -1,0 +1,67 @@
+/* Hamburger Menu CSS */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #ffffff;
+    border: solid 1px #000;
+    transition: transform 0.4s ease;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.4s ease;
+  }
+  
+  .hamburger-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .hamburger-menu {
+      display: block; /* Show hamburger on small screens */
+    }
+  
+    nav ul {
+      display: none; /* Hide the menu initially */
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      left: 15px;
+      width: 200px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+    }
+  
+    nav.open ul {
+      display: flex; /* Show the menu when nav is open */
+      max-height: 500px; /* Allow enough space for items to be visible */
+      opacity: 1;
+    }
+  
+    nav a {
+      padding: 10px;
+      display: block;
+    }
+  }
