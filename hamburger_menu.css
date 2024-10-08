@@ -66,64 +66,20 @@
   }
 }
 
-  .hamburger-menu {
-    display: block; /* Show hamburger on small and medium screens */
-  }
-
+@media only screen and (min-width: 769px) {
   nav ul {
-    display: none; /* Hide the menu initially */
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    left: 15px;
-    width: 200px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    transition: opacity 0.4s ease, max-height 0.4s ease;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-  }
-
-  nav.open ul {
-    display: flex; /* Show the menu when nav is open */
-    max-height: 500px; /* Allow enough space for items to be visible */
+    display: flex; /* Show the menu for desktop */
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    max-height: none;
     opacity: 1;
   }
 
   nav a {
     padding: 10px;
-    display: block;
-  }
-}
-
-
-
-  nav ul {
-    display: none; /* Hide the menu initially */
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    left: 15px;
-    width: 200px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    transition: opacity 0.4s ease, max-height 0.4s ease;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-  }
-
-  nav.open ul {
-    display: flex; /* Show the menu when nav is open */
-    max-height: 500px; /* Allow enough space for items to be visible */
-    opacity: 1;
-  }
-
-  nav a {
-    padding: 10px;
-    display: block;
+    display: inline;
   }
 }
