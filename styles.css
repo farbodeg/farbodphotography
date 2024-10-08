@@ -326,3 +326,24 @@ footer a {
   text-decoration: underline;
   color: #fff;
 }
+
+/* Button hover and active state styles */
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+button[type="submit"]:active {
+    background-color: #222;
+    color: #fff;
+}

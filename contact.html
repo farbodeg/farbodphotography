@@ -1,73 +1,87 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact Me</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body id="top">
-        <header>
-            <h1>Farbod Photography</h1>
-    
-            <nav>
-                <ul>
-                    <li><a class="home" href="index.html">Home</a></li>
-                    <li><a class="gallery" href="gallery.html">Gallery</a></li>
-                    <li><a class="about" href="about.html">About</a></li>
-                    <li><a class="contact" href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hamburger_menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+          // Cancel the event
+          e.preventDefault();
+          
+          // Show an alert message
+          alert("Copyright belongs to Farbod Edarehchi Gilani.");
+        });
+    </script>
+    <script src="hamburger_nav.js"></script>
+</head>
+<body id="top">
+    <header>
+        <h1>Farbod Photography</h1>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="gallery" href="gallery.html">Gallery</a></li>
+                <li><a class="about" href="about.html">About</a></li>
+                <li><a class="contact" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 <main>
-        <img class="header-logo" src="images2/LOGO.png" alt="Farbod Photography">
+    <img class="header-logo" src="images2/LOGO.png" alt="Farbod Photography" style="display: block; margin: 0 auto 30px auto;">
 
-
-            <div class="holder">
-            <!-- My form container holder, above form container, above the border -->
-
-                    <div class="form">
-                    <!-- My form container -->
-                        <form action="process_form.php" method="post">
-                            <label for="name">Name:</label>
-                            <input class="namebox" type="text" id="name" name="name" required>
-                            <br>
-                            <label for="email">Email:</label>
-                            <input class="emailtbox" type="email" id="email" name="email" required>
-                            <br>
-                            <label for="title">Title:</label>
-                            <input class="titlebox" type="text" id="title" name="title">
-                            <br>
-                            <label class="message" for="message">Message:</label>
-                            <textarea class="messagebox" id="message" name="message" required></textarea>
-                            <br>
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
-                    <!-- form closing div -->
-                <div class="holder2">
-                    <div class="email">
-                        <p class="pe">Email address: <a href="mailto:farbodeg@yahoo.com">farbodeg@yahoo.com</a></p>
-                        <p class="pn">Phone Number: (502) 821-4213</p>
-                    </div>
-                    <!-- email closing div -->
-                </div>
-                <!-- holder2 closing div -->
-             </div>
-             <!-- holder closeing div -->
+    <div class="holder">
+        <!-- My form container holder, above form container, above the border -->
+        <div class="form" style="background-color: #f9f9f9; padding: 40px 60px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
+            <!-- My form container -->
+            <form action="process_form.php" method="post" >
+                <label for="name" style="display: block; margin-bottom: 5px; text-align: left;">Name:</label>
+                <input class="namebox" type="text" id="name" name="name" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;">
+                
+                <label for="email" style="display: block; margin-bottom: 5px; text-align: left;">Email:</label>
+                <input class="emailtbox" type="email" id="email" name="email" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;">
+                
+                <label for="title" style="display: block; margin-bottom: 5px; text-align: left;">Title:</label>
+                <input class="titlebox" type="text" id="title" name="title" style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;">
+                
+                <label class="message" for="message" style="display: block; margin-bottom: 5px; text-align: left;">Message:</label>
+                <textarea class="messagebox" id="message" name="message" required style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; height: 150px;"></textarea>
+                
+                <button type="submit" style="padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, color 0.3s ease; display: block; margin: 0 auto;">Send</button>
+            </form>
+        </div>
+        <!-- form closing div -->
+        <div class="holder2" style="padding: 0 40px;">
+            <div class="email" style="text-align: center; margin-top: 20px;">
+                <p class="pe">Email address: <a href="mailto:farbodeg@yahoo.com">farbodeg@yahoo.com</a></p>
+                <p class="pn">Phone Number: (502) 821-4213</p>
+            </div>
+            <!-- email closing div -->
+        </div>
+        <!-- holder2 closing div -->
+     </div>
+     <!-- holder closing div -->
 </main>
-        <footer>
-		<p>&copy; 2023 My Photography Website</p>
+    <footer>
+        <p>&copy; 2023 My Photography Website</p>
         <p>Follow me on <a href="https://instagram.com/farbod.photography90" target="_blank">Instagram</a>&nbsp;<b>|</b>&nbsp;<a href="#">Facebook</a>&nbsp;<b>|</b>&nbsp;<a href="https://twitter.com/farbodphoto90" target="_blank">X (Twitter)</a></p>
-        </footer>
+    </footer>
 
-        <a href="#top" class="jump-to-top" id="jumplink">
-            <img src="images2/arrow.png" alt="Jump to Top">
-        </a>
+    <a href="#top" class="jump-to-top" id="jumplink">
+        <img src="images2/arrow.png" alt="Jump to Top">
+    </a>
 
-        <div id="louisvilleTime">Loading current time...</div>
+    <div id="louisvilleTime">Loading current time...</div>
 
+    <script src="jumplink.js"></script>
+    <script src="clock.js"></script>
 
-        <script src="jumplink.js"></script>
-        <script src="clock.js"></script>
-
-    
-    </body>
+</body>
 </html>
