@@ -14,3 +14,14 @@ setInterval(updateLouisvilleTime, 1000);
 
 // Initialize on load
 updateLouisvilleTime();
+
+// Update copyright year dynamically
+function updateCopyrightYear() {
+    var currentYear = new Date().getFullYear();
+    document.querySelectorAll('.copyright-year').forEach(function(element) {
+        element.textContent = currentYear;
+    });
+}
+
+// Initialize on load
+updateCopyrightYear();
